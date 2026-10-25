@@ -1,0 +1,40 @@
+Steps to run the code
+  gcc scheduler.c -o scheduler
+  ./scheduler
+
+The program will ask you for the total number of processes. For each process, it will ask for the arrival time and burst time. 
+
+Sample Execution
+
+arsenh@ubuntu-aua-2026:~/Operating-systems/HW7$ ./scheduler 
+Enter the number of processes: 3
+Enter the arrival time for process 1: 1
+Enter the burst time for process 1: 6
+Enter the arrival time for process 2: 2
+Enter the burst time for process 2: 7
+Enter the arrival time for process 3: 2
+Enter the burst time for process 3: 9
+
+ ----- First Come First Served Executing -----
+ ----- First Come First Served End -----
+Gantt Chart: |   P1   |   P2   |   P3   |
+PID     AT      BT      WT      TAT     RT     
+1       1       6       0       6       0      
+2       2       7       5       12      5      
+3       2       9       12      21      12     
+
+Average Waiting Time: 5.67
+Average Turnaround Time: 13.00
+Average Response Time: 5.67
+
+ ----- Shortest Job First Executing -----
+ ----- Shortest Job First End -----
+Gantt Chart: |   P1   |   P2   |   P3   |
+PID     AT      BT      WT      TAT     RT     
+1       1       6       0       6       0      
+2       2       7       5       12      5      
+3       2       9       12      21      12     
+
+Average Waiting Time: 5.67
+Average Turnaround Time: 13.00
+Average Response Time: 5.67
